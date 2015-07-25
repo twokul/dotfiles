@@ -50,7 +50,7 @@ SAVEHIST=10000
 autoload -U compinit
 compinit
 
-setopt NO_BG_NICE # don't nice background tasks
+setopt NO_BG_NICE # don"t nice background tasks
 setopt NO_HUP
 setopt NO_LIST_BEEP
 setopt LOCAL_OPTIONS # allow functions to have local options
@@ -65,30 +65,33 @@ setopt IGNORE_EOF
 
 setopt APPEND_HISTORY # adds history
 setopt INC_APPEND_HISTORY SHARE_HISTORY  # adds history incrementally and share it across sessions
-setopt HIST_IGNORE_ALL_DUPS  # don't record dupes in history
+setopt HIST_IGNORE_ALL_DUPS  # don"t record dupes in history
 setopt HIST_REDUCE_BLANKS
 
 # matches case insensitive for lowercase
-zstyle ':completion:*' matcher-list 'm:{a-z}={A-Z}'
+zstyle ":completion:*" matcher-list "m:{a-z}={A-Z}"
 
-# pasting with tabs doesn't perform completion
-zstyle ':completion:*' insert-tab pending
+# pasting with tabs doesn"t perform completion
+zstyle ":completion:*" insert-tab pending
 
-# don't expand aliases _before_ completion has finished
+# don"t expand aliases _before_ completion has finished
 #   like: git comm-[tab]
 setopt complete_aliases
 
-bindkey '^[^[[D' backward-word
-bindkey '^[^[[C' forward-word
-bindkey '^[[5D' beginning-of-line
-bindkey '^[[5C' end-of-line
-bindkey '^[[3~' delete-char
-bindkey '^[^N' newtab
-bindkey '^?' backward-delete-char
-bindkey '^R' history-incremental-search-backward
+bindkey "^[^[[D" backward-word
+bindkey "^[^[[C" forward-word
+bindkey "^[[5D" beginning-of-line
+bindkey "^[[5C" end-of-line
+bindkey "^[[3~" delete-char
+bindkey "^[^N" newtab
+bindkey "^?" backward-delete-char
+bindkey "^R" history-incremental-search-backward
 
 # -------------------
 # NVM
 # -------------------
 export NVM_DIR="/Users/alex/.nvm"
 [ -s "$NVM_DIR/nvm.sh" ] && . "$NVM_DIR/nvm.sh"  # This loads nvm
+
+[[ -s "$HOME/.qfc/bin/qfc.sh" ]] && source "$HOME/.qfc/bin/qfc.sh"
+qfc_quick_command 'cd' '\C-f' 'cd $0'
