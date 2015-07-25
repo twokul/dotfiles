@@ -5,62 +5,53 @@
 git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 ```
 
-## Stuff
+## Terminal
 
 + [Homebrew](http://brew.sh/)
-
-  ```sh
-  ruby -e "$(curl -fsSL https://raw.githubusercontent.com/Homebrew/install/master/install)"
-  ```
-
 + [Hub](https://github.com/github/hub)
-
-  ```sh
-  brew install hub
-  ```
-+ [tmux](http://tmux.sourceforge.net/)
-
-  ```sh
-  brew install tmux
-  ```
++ [neovim](http://neovim.io)
 + [peco](https://github.com/peco/peco)
- 
-  ```sh
-  brew tap peco/peco
-  brew install peco
-  ```
-+ [fasd](https://github.com/clvv/fasd)
++ [qfc](https://github.com/pindexis/qfc)
 
-  ```sh
-    brew install fasd
-  ```
-+ [watchman](https://facebook.github.io/watchman/)
+### Productivity
 
-  ```sh
-    brew install watchman
-  ```
-+ [SizeUp](http://www.irradiatedsoftware.com/sizeup/)
-+ [Boom](http://www.globaldelight.com/boom/)
++ [SizeUp](http://www.irradiatedsoftware.com/sizeup/), windows management.
++ [Dash](http://kapeli.com/dash), easy-to-find docs.
++ [Wunderlist](https://en.todoist.com/mac)
++ [fetching](http://fetching.io), easy url history search.
+
+### Music
+
++ [Spotify](https://www.spotify.com/us/), better music.
++ [Boom](http://www.globaldelight.com/boom/), better sound.
+
+### Read
+
 + [Tweetbot](http://tapbots.com/software/tweetbot/mac/)
-+ [Spotify](https://www.spotify.com/us/)
-+ [Nimbus](https://github.com/jnordberg/irccloudapp)
-+ [Dash](http://kapeli.com/dash)
++ [Reeder](http://reederapp.com/mac/)
+
+### Chat
+
 + [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
-+ [Adium](https://adium.im/)
++ [Gestimer](https://itunes.apple.com/us/app/gestimer-for-those-little/id990588172?mt=12)
+
+### Dev Tools
+
++ [Kaleidoscope](http://www.kaleidoscopeapp.com/)
++ [Patterns](https://itunes.apple.com/us/app/patterns-the-regex-app/id429449079?mt=12)
++ [iTerm2](http://iterm2.com)
++ [Charles](http://www.charlesproxy.com)
++ [Tower](http://www.git-tower.com), when I get tired of git diffs in terminal.
+
+### Misc
+
 + [1Password](https://agilebits.com/onepassword)
-+ [Dropbox](https://www.dropbox.com/downloading?src=index)
++ [Dropbox](https://www.dropbox.com/)
 + [VLC](http://www.videolan.org/vlc/index.html)
 + [Flux](https://justgetflux.com/)
 + [Evernote](https://evernote.com/download/)
-+ [Whiskey](http://usewhiskey.com/latest)
-+ [AirMail 2](http://airmailapp.com/)
-+ [Slack](https://slack.com/)
++ [Bartender](http://www.macbartender.com)
 + [Transmission](https://www.transmissionbt.com/download/)
-+ [Todoist](https://en.todoist.com/mac)
-+ [Focus]()
-+ [Kaleidoscope](http://www.kaleidoscopeapp.com/)
-+ [Patterns]()
-+ [iTerm2]()
 
 ### Alfred Workflows
 
@@ -68,4 +59,5 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [shorten url](https://github.com/hzlzh/Alfred-Workflows/tree/master/Shorten-URL)
 + [ip](http://zno.io/RcAi)
 + [github](http://gh01.de/alfred/github/github.alfredworkflow)
-+ [spotifious](https://github.com/citelao/Spotify-for-Alfred/archive/master.zip)
+
+This [site](http://alfredworkflow.com) has insane amount of workflows.
