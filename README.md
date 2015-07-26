@@ -53,6 +53,10 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Bartender](http://www.macbartender.com)
 + [Transmission](https://www.transmissionbt.com/download/)
 
+### Color themes
+
++ [Oceanic](https://github.com/voronianski/oceanic-next-color-scheme)
+
 ### Alfred Workflows
 
 + [colors](https://github.com/TylerEich/Alfred-Extras/blob/master/Workflows/Colors.alfredworkflow)
