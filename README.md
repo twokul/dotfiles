@@ -15,7 +15,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 
 ### Productivity
 
-+ [SizeUp](http://www.irradiatedsoftware.com/sizeup/), windows management.
 + [Dash](http://kapeli.com/dash), easy-to-find docs.
 + [fetching](http://fetching.io), easy url history search.
 
