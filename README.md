@@ -17,7 +17,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 
 + [SizeUp](http://www.irradiatedsoftware.com/sizeup/), windows management.
 + [Dash](http://kapeli.com/dash), easy-to-find docs.
-+ [Wunderlist](https://en.todoist.com/mac)
 + [fetching](http://fetching.io), easy url history search.
 
 ### Music
