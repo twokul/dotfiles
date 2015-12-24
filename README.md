@@ -11,7 +11,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Hub](https://github.com/github/hub)
 + [neovim](http://neovim.io)
 + [peco](https://github.com/peco/peco)
-+ [qfc](https://github.com/pindexis/qfc)
 
 ### Productivity
 
