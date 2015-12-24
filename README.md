@@ -17,6 +17,7 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 
 + [Dash](http://kapeli.com/dash), easy-to-find docs.
 + [fetching](http://fetching.io), easy url history search.
++ [OmniFocus](https://www.omnigroup.com/omnifocus)
 
 ### Music
 
