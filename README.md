@@ -41,7 +41,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Dropbox](https://www.dropbox.com/)
 + [VLC](http://www.videolan.org/vlc/index.html)
 + [Flux](https://justgetflux.com/)
-+ [Evernote](https://evernote.com/download/)
 + [Bartender](http://www.macbartender.com)
 + [Transmission](https://www.transmissionbt.com/download/)
 
