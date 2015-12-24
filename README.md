@@ -30,7 +30,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 ### Chat
 
 + [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
-+ [Gestimer](https://itunes.apple.com/us/app/gestimer-for-those-little/id990588172?mt=12)
 
 ### Dev Tools
 
