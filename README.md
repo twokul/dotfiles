@@ -32,7 +32,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Kaleidoscope](http://www.kaleidoscopeapp.com/)
 + [Patterns](https://itunes.apple.com/us/app/patterns-the-regex-app/id429449079?mt=12)
 + [iTerm2](http://iterm2.com)
-+ [Charles](http://www.charlesproxy.com)
 + [Tower](http://www.git-tower.com), when I get tired of git diffs in terminal.
 
 ### Misc
