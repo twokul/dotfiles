@@ -22,7 +22,7 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 ### Music
 
 + [Spotify](https://www.spotify.com/us/), better music.
-+ [Boom](http://www.globaldelight.com/boom/), better sound.
++ [Boom 2](http://www.globaldelight.com/boom/), better sound.
 
 ### Read
 
