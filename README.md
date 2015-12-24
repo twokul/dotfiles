@@ -27,10 +27,6 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Tweetbot](http://tapbots.com/software/tweetbot/mac/)
 + [Reeder](http://reederapp.com/mac/)
 
-### Chat
-
-+ [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
-
 ### Dev Tools
 
 + [Kaleidoscope](http://www.kaleidoscopeapp.com/)
