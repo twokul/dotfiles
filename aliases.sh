@@ -5,24 +5,9 @@
 alias git=hub
 alias reload!='. ~/.zshrc'
 alias md='mkdir'
-alias ..='cd ..'
 alias l='ls -l'
-alias tls='tmux -2 list-sessions'
-alias tns='tmux -2 new-session -s'
-alias ta='tmux -2 a -t'
-alias home='ssh root@162.243.74.58'
-alias d8perf='d8 --trace-hydrogen --allow-natives-syntax --trace-phase=Z --trace-deopt --hydrogen-track-positions --code-comments --redirect-code-traces --redirect-code-traces-to=code.asm'
-alias canaryperf='/Applications/Google\ Chrome\ Canary.app/Contents/MacOS/Google\ Chrome\ Canary \ --no-sandbox --js-flags="--trace-hydrogen --trace-phaze=Z --trace-deopt --code-comments --hydrogen-track-positions" http://localhost:9090'
-
-alias a='fasd -a'        # any
-alias s='fasd -si'       # show / search / select
-alias d='fasd -d'        # directory
-alias f='fasd -f'        # file
-alias v='fasd -e vim'    # open the file with vim
-alias sd='fasd -sid'     # interactive directory selection
-alias sf='fasd -sif'     # interactive file selection
-alias z='fasd_cd -d'     # cd, same functionality as j in autojump
-alias zz='fasd_cd -d -i' # cd with interactive selection
+alias home='ssh alex@162.243.74.58'
+alias lampo='ssh root@104.236.195.152'
 
 alias nom='npm cache clear && rm -rf node_modules && npm install'
 alias bom='bower cache clean && rm -rf bower_components && bower install'
