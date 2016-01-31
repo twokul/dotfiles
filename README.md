@@ -11,36 +11,29 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Hub](https://github.com/github/hub)
 + [neovim](http://neovim.io)
 + [peco](https://github.com/peco/peco)
-+ [qfc](https://github.com/pindexis/qfc)
++ [fzf](https://github.com/junegunn/fzf)
 
 ### Productivity
 
-+ [SizeUp](http://www.irradiatedsoftware.com/sizeup/), windows management.
 + [Dash](http://kapeli.com/dash), easy-to-find docs.
-+ [Wunderlist](https://en.todoist.com/mac)
 + [fetching](http://fetching.io), easy url history search.
++ [OmniFocus](https://www.omnigroup.com/omnifocus)
 
 ### Music
 
 + [Spotify](https://www.spotify.com/us/), better music.
-+ [Boom](http://www.globaldelight.com/boom/), better sound.
++ [Boom 2](http://www.globaldelight.com/boom/), better sound.
 
 ### Read
 
 + [Tweetbot](http://tapbots.com/software/tweetbot/mac/)
 + [Reeder](http://reederapp.com/mac/)
 
-### Chat
-
-+ [Skype](http://www.skype.com/en/download-skype/skype-for-computer/)
-+ [Gestimer](https://itunes.apple.com/us/app/gestimer-for-those-little/id990588172?mt=12)
-
 ### Dev Tools
 
 + [Kaleidoscope](http://www.kaleidoscopeapp.com/)
 + [Patterns](https://itunes.apple.com/us/app/patterns-the-regex-app/id429449079?mt=12)
 + [iTerm2](http://iterm2.com)
-+ [Charles](http://www.charlesproxy.com)
 + [Tower](http://www.git-tower.com), when I get tired of git diffs in terminal.
 
 ### Misc
@@ -49,9 +42,12 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Dropbox](https://www.dropbox.com/)
 + [VLC](http://www.videolan.org/vlc/index.html)
 + [Flux](https://justgetflux.com/)
-+ [Evernote](https://evernote.com/download/)
-+ [Bartender](http://www.macbartender.com)
++ [Bartender 2](http://www.macbartender.com)
 + [Transmission](https://www.transmissionbt.com/download/)
+
+### Color themes
+
++ [Oceanic](https://github.com/voronianski/oceanic-next-color-scheme)
 
 ### Alfred Workflows
 
