@@ -18,11 +18,14 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Dash](http://kapeli.com/dash), easy-to-find docs.
 + [fetching](http://fetching.io), easy url history search.
 + [OmniFocus](https://www.omnigroup.com/omnifocus)
++ [Hocus Focus](http://hocusfoc.us/)
 
 ### Music
 
 + [Spotify](https://www.spotify.com/us/), better music.
 + [Boom 2](http://www.globaldelight.com/boom/), better sound.
++ [Plug](https://www.plugformac.com), hype machine.
++ [Noizio](http://noiz.io/)
 
 ### Read
 
@@ -35,6 +38,9 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Patterns](https://itunes.apple.com/us/app/patterns-the-regex-app/id429449079?mt=12)
 + [iTerm2](http://iterm2.com)
 + [Tower](http://www.git-tower.com), when I get tired of git diffs in terminal.
++ [Paw](https://luckymarmot.com/paw)
++ [Querious](http://www.araelium.com/querious/)
++ [Base](https://menial.co.uk/base/)
 
 ### Misc
 
@@ -44,6 +50,8 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 + [Flux](https://justgetflux.com/)
 + [Bartender 2](http://www.macbartender.com)
 + [Transmission](https://www.transmissionbt.com/download/)
++ [Shimo](https://www.feingeist.io/shimo/)
++ [Polymail](polymail.io)
 
 ### Color themes
 
