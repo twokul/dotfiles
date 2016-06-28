@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+# Add Fish to /etc/shells
+echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
+
+# Set Fish shell as the default shell
+chsh -s `which fish`
+
+link ~/.config/fish/config.fish ~/.dotfiles/fish/config.fish

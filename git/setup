@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+link ~/.gitconfig .gitconfig
+link ~/.gitignore_global .gitconfig_global

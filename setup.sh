@@ -1,7 +1,28 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
-ln -s ~/.dotfiles/.npmrc ~/.npmrc
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.gitingore_global ~/.gitingore_global
-ln -s ~/.dotfiles/twokul.zsh-theme ~/.oh-my-zsh/themes/twokul.zsh-theme
+# Main installer
+
+export DOTFILES=$HOME/.dotfiles
+
+# Install fonts
+$DOTFILES/fonts/install
+
+# Install Homebrew
+$DOTFILES/homebrew/install.sh 2>&1
+
+# Update Homebrew
+echo "> brew update"
+brew update
+
+# Install applications in Brewfile using Homebrew
+echo "> brew bundle"
+brew bundle
+
+# Use Fish Shell by default
+$DOTFILES/fish/default 2>&1
+
+# Run setup commands
+find . -name setup | while read setup_func; do sh -c "${setup_func}"; done
+
+# Set defaults for OS
+$DOTFILES/macos/setup.sh

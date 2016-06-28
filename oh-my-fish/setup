@@ -1,0 +1,10 @@
+#!/usr/bin/env fish
+
+# Download oh-my-fish installer script but don't run it just yet
+curl -L http://get.oh-my.fish | fish
+
+link ~/.config/omf/bundle bundle
+link ~/.config/omf/channel channel
+link ~/.config/omf/theme theme
+
+omf reload

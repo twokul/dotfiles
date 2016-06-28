@@ -1,0 +1,6 @@
+#!/usr/bin/env bash
+
+cp /usr/local/etc/fonts/fonts.conf.bak /usr/local/etc/fonts/fonts.conf
+
+git clone https://github.com/powerline/fonts.git
+source fonts/install.sh

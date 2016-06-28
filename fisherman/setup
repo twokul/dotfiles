@@ -1,0 +1,7 @@
+#!/usr/bin/env fish
+
+# Link package file
+link ~/.config/fish/fishfile fishfile
+
+# Install fisherman packages
+fisher up
