@@ -1,0 +1,8 @@
+let g:netrw_dirhistmax  =10
+let g:netrw_dirhist_cnt =6
+let g:netrw_dirhist_1='/Users/anavasar/.dotfiles/nvim'
+let g:netrw_dirhist_2='/Users/anavasar/.dotfiles/nvim/mappings'
+let g:netrw_dirhist_3='/Users/anavasar/.dotfiles/nvim'
+let g:netrw_dirhist_4='/Users/anavasar/.dotfiles/nvim/mappings'
+let g:netrw_dirhist_5='/Users/anavasar/.dotfiles/nvim'
+let g:netrw_dirhist_6='/Users/anavasar/code/oss/cli/ember-cli'

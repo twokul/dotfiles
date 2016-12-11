@@ -1,0 +1,17 @@
+#!/usr/bin/env fish
+
+# Install Plug https://github.com/junegunn/vim-plug
+
+# Install for Vim
+curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Install for NeoVim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
+    https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
+
+# Link Vim config files
+ln -s ~/.dotfiles/nvim/ ~/.vim/
+
+# Link Neovim config files
+ln -s ~/.dotfiles/nvim/init.vim ~/.config/nvim/init.vim
