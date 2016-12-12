@@ -85,7 +85,7 @@ set wildignore+=*node_modules/*                  " Ignore npm
 set wildmode=list:full   " complete files like a shell"
 set backspace=indent,eol,start " make backspace behave in a sane manner
 
-" Color
+" Colour
 " ---------------
 syntax on
 set background=dark

@@ -1,0 +1,4 @@
+#!/usr/bin/env fish
+
+# Link ignore file
+ln -s ~/.dotfiles/the_silver_sercher/.agignore ~/.agignore
