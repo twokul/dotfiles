@@ -3,8 +3,8 @@
 # Download oh-my-fish installer script but don't run it just yet
 curl -L http://get.oh-my.fish | fish
 
-link ~/.config/omf/bundle bundle
-link ~/.config/omf/channel channel
-link ~/.config/omf/theme theme
+ln -s ~/.dotfiles/oh-my-fish/bundle ~/.config/omf/bundle
+ln -s ~/.dotfiles/oh-my-fish/channel ~/.config/omf/channel
+ln -s ~/.dotfiles/oh-my-fish/theme ~/.config/omf/theme
 
 omf reload

@@ -1,4 +1,4 @@
 #!/usr/bin/env fish
 
-link ~/.gitconfig .gitconfig
-link ~/.gitignore_global .gitconfig_global
+ln -s ~/.dotfiles/git/.gitconfig ~/.gitconfig
+ln -s ~/.dotfiles/git/.gitignore_global ~/.gitconfig_global
