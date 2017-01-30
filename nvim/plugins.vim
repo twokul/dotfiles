@@ -1,5 +1,5 @@
 " Specify a directory for plugins
-call plug#begin('~/.config/nvim/plugged')
+call plug#begin('~/.config/vim/plugged')
 
 " colourschemes
 Plug 'joshdick/onedark.vim'

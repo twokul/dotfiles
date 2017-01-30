@@ -1,8 +1,8 @@
 # NVM
-nvm use 4.5.0
+nvm use 6
 
 # Environment variables
-source variables.fish
+source ~/.dotfiles/fish/variables.fish
 
 # Aliases
-source aliases.fish
+source ~/.dotfiles/fish/aliases.fish

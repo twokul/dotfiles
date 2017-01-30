@@ -6,4 +6,4 @@ echo "/usr/local/bin/fish" | sudo tee -a /etc/shells
 # Set Fish shell as the default shell
 chsh -s `which fish`
 
-ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish
+# ln -s ~/.dotfiles/fish/config.fish ~/.config/fish/config.fish

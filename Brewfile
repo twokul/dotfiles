@@ -2,6 +2,8 @@ cask_args appdir: '/Applications'
 
 tap "homebrew/bundle"
 tap "caskroom/cask"
+tap "fisherman/tap"
+tap "neovim/neovim"
 
 brew "coreutils"
 brew "fish"
@@ -14,7 +16,6 @@ brew "hub"
 brew "jq"
 brew "fontconfig"
 brew "neovim"
-brew "nvm"
 brew "the_silver_searcher"
 brew "tmux"
 brew "vim"

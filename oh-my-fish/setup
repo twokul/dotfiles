@@ -7,4 +7,5 @@ ln -s ~/.dotfiles/oh-my-fish/bundle ~/.config/omf/bundle
 ln -s ~/.dotfiles/oh-my-fish/channel ~/.config/omf/channel
 ln -s ~/.dotfiles/oh-my-fish/theme ~/.config/omf/theme
 
+omf install simple-ass-prompt
 omf reload

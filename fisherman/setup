@@ -1,7 +1,19 @@
 #!/usr/bin/env fish
 
+set -U fish_user_paths
+
 # Link package file
-ln -s ~/.dotfiles/fish/fishfile ~/.config/fish/fishfile
+ln -s ~/.dotfiles/fisherman/fishfile ~/.config/fish/fishfile
 
 # Install fisherman packages
 fisher up
+fisher install fisherman/await
+fisher install edc/bass
+fisher install fisherman/fzf
+fisher install fisherman/getopts
+fisher install fisherman/last_job_id
+fisher install fisherman/nvm
+fisher install fisherman/z
+
+# Install fast-nvm-fish
+curl -sSL https://raw.githubusercontent.com/brigand/fast-nvm-fish/master/nvm.fish > ~/.config/fish/functions/nvm.fish
