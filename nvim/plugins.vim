@@ -21,7 +21,6 @@ Plug 'tpope/vim-unimpaired' " mappings which are simply short normal mode aliase
 Plug 'editorconfig/editorconfig-vim' " .editorconfig support
 Plug 'bronson/vim-trailing-whitespace'
 Plug 'junegunn/goyo.vim', { 'on': 'Goyo' } " distraction-free writing
-Plug 'Yggdroot/indentLine' " displaying thin vertical lines at each indentation level for code indented with spaces
 Plug 'junegunn/limelight.vim', { 'on': 'Limelight' } " focus tool. Good for presentating with vim
 Plug 'dag/vim-fish' " addon for Vim providing support for editing fish scripts
 Plug 'MarcWeber/vim-addon-mw-utils' " interpret a file by function and cache file automatically

@@ -6,7 +6,6 @@ syntax enable         " Turn on syntax highlighting allowing local overrides
 set hidden            " allow buffer switching without saving
 set history=1000      " Store a ton of history (default is 20)
 set noswapfile        " Don't use swap file
-set nostartofline     " Don't go to the start of the line after some commands
 set pastetoggle=<F7>  " set showcmd
 set timeout           " Time out on key codes but not mappings.
 set ttimeout          " Time out on key codes but not mappings.
@@ -18,9 +17,7 @@ set switchbuf=useopen " Switch to an existing buffer if one exists)
 set splitright        " Split vertical windows right to the current windows
 set splitbelow        " Split horizontal windows below to the current windows"
 set encoding=utf-8    " Set default encoding to UTF-8"
-set cursorline        " Highlight current line
-set hidden            " current buffer can be put into background
-set laststatus=2      " show the satus line all the time"
+set laststatus=2      " show the status line all the time"
 set showcmd           " show incomplete commands
 set noshowmode        " don't show which mode disabled for PowerLine
 set wildmenu          " enhanced command line completion"
@@ -117,7 +114,6 @@ let g:onedark_terminal_italics=1
 " toggle invisible characters
 set list
 set listchars=tab:→\ ,eol:¬,trail:•,extends:❯,precedes:❮
-set showbreak=↪
 
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'

@@ -28,3 +28,7 @@ alias gp "git push origin HEAD"
 alias gt "git tag"
 alias gm "git merge"
 alias gdt "git difftool"
+
+alias puzzleslabs "ssh root@45.55.228.134"
+alias twokul "ssh root@104.131.141.145"
+alias git "hub"
