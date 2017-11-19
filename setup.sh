@@ -24,6 +24,9 @@ brew upgrade
 echo "> brew bundle"
 brew bundle
 
+# Setup Git
+$DOTFILES/git/install 2>&1
+
 # Use ZSH by default and install oh-my-zsh
 $DOTFILES/shell/install 2>&1
 
