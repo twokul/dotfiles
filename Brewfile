@@ -36,7 +36,7 @@ cask "font-hack"
 
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
-brew "coreutils"
+# brew "coreutils"
 
 # Install GNU `find`, `locate`, `updatedb`, and `xargs`, `g`-prefixed.
 brew "findutils"
@@ -75,7 +75,7 @@ brew "the_silver_searcher"
 # ngrok exposes local servers behind NATs and firewalls
 # to the public internet over secure tunnels.
 # https://ngrok.com
-brew "ngrok"
+cask "ngrok"
 
 # Line-oriented search tool that recursively searches
 # your current directory for a regex pattern
@@ -140,7 +140,7 @@ brew "htop"
 
 # A replacement for Terminal and the successor to iTerm
 # http://www.iterm2.com
-brew "iterm2"
+cask "iterm2"
 
 # tmux is a "terminal multiplexer", it enables a number
 # of terminals (or windows) to be accessed and controlled
@@ -150,14 +150,11 @@ brew "tmux"
 
 # The ubiquitous text editor
 # http://www.vim.org
-brew "vim" --with-override-system-vi
+brew "vim"
 
 # A shell designed for interactive use
 # http://www.zsh.org
 brew "zsh"
-brew "zsh-autosuggestions"
-brew "zsh-completions"
-brew "zsh-history-substring-search"
 
 # Browsers
 cask "google-chrome"
@@ -240,14 +237,6 @@ mas "Irvue", id: 1039633667
 # http://noiz.io
 mas "Noizio", id: 928871589
 
-# The Ultimate Writing App for Mac, iPad and iPhone
-# https://www.ulyssesapp.com
-mas "Ulysses", id: 1225570693
-
 # Disk space management
 # https://daisydiskapp.com/index.html
-mas DaisyDisk, id: 411643860
-
-# The intelligent duplicate file finder
-# https://macpaw.com/gemini
-mas "Gemini 2: The Duplicate Finder", id: 1090488118
+mas "DaisyDisk", id: 411643860
