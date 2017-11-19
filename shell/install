@@ -3,7 +3,7 @@
 sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/master/tools/install.sh)"
 
 # oh-my-zsh theme
-ln -s $DOTFILES/themes/oh-my-zsh/twokul.zsh-theme $DOTFILES/oh-my-zsh/themes/twokul.zsh-theme
+ln -s $DOTFILES/themes/oh-my-zsh/twokul.zsh-theme $HOME/.oh-my-zsh/themes/twokul.zsh-theme
 
 # zshrc config
 ln -s $DOTFILES/shell/.config ~/.zshrc

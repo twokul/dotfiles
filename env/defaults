@@ -3,7 +3,7 @@
 # Setup default file paths and variables
 
 # Make sure to make scripts under `bin/` available
-export PATH=$HOME/.dotfiles/bin:$PATH
+export PATH=$HOME/.dotfiles/bin:$HOME/.cargo/bin:$PATH
 
 # Code folder that we can `c [tab]` to
 export PROJECTS=~/code
