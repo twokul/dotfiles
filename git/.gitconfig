@@ -1,37 +1,69 @@
 [hub]
   protocol = https
+
 [user]
   name = Alex Navasardyan
   email = alex.navasardyan@gmail.com
+
 [credential]
   helper = osxkeychain
+
 [core]
   autocrlf = input
-  excludesfile = /Users/alex/.gitignore_global
-  editor = nvim
+  excludesfile = $HOME/.gitignore_global
+  editor = vim
+
+  # Make `git rebase` safer on macOS
+	# More info: <http://www.git-tower.com/blog/make-git-rebase-safe-on-osx/>
+	trustctime = false
+
+  # Speed up commands involving untracked files such as `git status`.
+	# https://git-scm.com/docs/git-update-index#_untracked_cache
+	untrackedCache = true
+
 [color]
   diff = auto
   status = auto
   branch = auto
   ui = true
+
 [mergetool "Kaleidoscope"]
   cmd = ksdiff --merge --output \"$MERGED\" --base \"$BASE\" -- \"$LOCAL\" --snapshot \"$REMOTE\" --snapshot
   trustexitcode = true
+
 [merge]
   tool = Kaleidoscope
+
+  # Include summaries of merged commits in newly created merge commit messages
+	log = true
+
 [difftool "Kaleidoscope"]
   cmd = ksdiff --partial-changeset --relative-path \"$MERGED\" -- \"$LOCAL\" \"$REMOTE\"
+
 [diff]
   tool = Kaleidoscope
+
+[commit]
+
+	# https://help.github.com/articles/signing-commits-using-gpg/
+	gpgsign = true
+
 [github]
   user = twokul
+
 [push]
   default = simple
+
 [alias]
   diff-upstream = "! git for-each-ref --shell --format='b=%(refname:short); u=%(upstream:short); git diff  ' refs/heads/master | sh"
   delete-merged-branches = "!git branch --merged | grep -v master | grep -v $(git symbolic-ref --short HEAD) | xargs git branch -d"
   wtf = "! $HOME/.dotfiles/bin/git-wtf"
   rank-contributors = "! $HOME/.dotfiles/bin/git-rank-contributors"
   setup-fetching-prs = "config --add remote.origin.fetch '+refs/pull/*/head:refs/remotes/origin/pr/*'"
+  up = "! $HOME/.dotfiles/bin/git-up"
+  undo = "! $HOME/.dotfiles/bin/git-undo"
   amend = "! git commit --amend -C HEAD"
   lol = "! git log --pretty --oneline --abbrev-commit --graph"
+  save = "!git add -A && git commit -m 'SAVEPOINT'"
+  wip = "commit -am 'WIP'"
+  amend = "commit -a --amend"

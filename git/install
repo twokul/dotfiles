@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Git
+ln -s $DOTFILES/git/.gitconfig ~/.gitconfig
+ln -s $DOTFILES/git/.gitingore_global ~/.gitingore_global

@@ -1,0 +1,5 @@
+#!/usr/bin/env bash
+
+# Rustup is an installer for the systems programming language Rust
+# https://www.rustup.rs
+curl https://sh.rustup.rs -sSf | sh

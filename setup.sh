@@ -1,7 +1,43 @@
-#!/bin/zsh
+#!/usr/bin/env bash
 
-ln -s ~/.dotfiles/.npmrc ~/.npmrc
-ln -s ~/.dotfiles/.zshrc ~/.zshrc
-ln -s ~/.dotfiles/.gitconfig ~/.gitconfig
-ln -s ~/.dotfiles/.gitingore_global ~/.gitingore_global
-ln -s ~/.dotfiles/twokul.zsh-theme ~/.oh-my-zsh/themes/twokul.zsh-theme
+# Main installer
+export DOTFILES=$HOME/.dotfiles
+
+# Install themes
+$DOTFILES/themes/install 2>&1
+
+# Set defaults for OS
+$DOTFILES/macos/install
+
+# Install Homebrew
+$DOTFILES/homebrew/install 2>&1
+
+# Update Homebrew
+echo "> brew update"
+brew update
+
+# Upgrade packages
+echo "> brew upgrade"
+brew upgrade
+
+# Install applications in Brewfile using Homebrew
+echo "> brew bundle"
+brew bundle
+
+# Use ZSH by default and install oh-my-zsh
+$DOTFILES/shell/install 2>&1
+
+# Setup Spectacle
+$DOTFILES/spectacle/install.sh
+
+# Vim
+# https://vim.org
+$DOTFILES/vim/install
+
+# Languages
+
+# JS/Node.js
+$DOTFILES/nvm/install
+
+# # Rust
+$DOTFILES/rustup/install

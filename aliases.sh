@@ -7,7 +7,6 @@ alias reload!='. ~/.zshrc'
 alias md='mkdir'
 alias l='ls -l'
 alias home='ssh alex@162.243.74.58'
-alias lampo='ssh root@104.236.195.152'
 
 alias nom='npm cache clear && rm -rf node_modules && npm install'
 alias bom='bower cache clean && rm -rf bower_components && bower install'

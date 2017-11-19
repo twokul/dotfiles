@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+git clone https://github.com/sonph/onehalf.git $HOME/.dotfiles/themes/onehalf
+git clone https://github.com/benniemosher/the-one-theme/ $HOME/.dotfiles/themes/the-one-theme

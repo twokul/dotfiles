@@ -1,0 +1,46 @@
+# Aliases
+#
+# alias hub as git
+# https://hub.github.com
+alias git=hub
+
+# Apply changes to the current profile
+# w/o opening a new tab or window
+alias reload!=". ~/.zshrc"
+
+# Create a new directory
+# md foo/bar
+alias md="mkdir -p"
+
+# Tmux
+alias tns "tmux new -s"
+alias ta "tmux attach -t"
+alias tls "tmux ls"
+alias tk "tmux kill-session -t"
+
+# `coreutils` overrides
+alias ls="gls -F --color"
+alias l="gls -lAh --color"
+alias ll="gls -l --color"
+alias la="gls -A --color"
+
+# Jumper
+alias z="fasd_cd -d"
+
+# Git
+#
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gco="git checkout"
+alias gs="git status -sb"
+alias gp="git push origin HEAD"
+alias gr="git remote"
+alias ga="git add"
+alias gpf="git push origin HEAD --force"
+alias gd="git diff"
+alias gc="git commit -v"
+alias gdt="git difftool"
+alias gb="git branch"
+
+# Copy public key to clipboard
+#
+alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"
