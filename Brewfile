@@ -140,7 +140,7 @@ brew "htop"
 
 # A replacement for Terminal and the successor to iTerm
 # http://www.iterm2.com
-cask "iterm2"
+cask "iterm2-nightly"
 
 # tmux is a "terminal multiplexer", it enables a number
 # of terminals (or windows) to be accessed and controlled
