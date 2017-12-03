@@ -1,3 +1,17 @@
+" Settings for NerdTree, FZF, Fugitive, Lightline
+
+"> NerdTree
+""""""""""""
+nmap <silent> <leader>k :NERDTreeToggle<cr>
+let g:NERDSpaceDelims = 1
+let g:NERDTreeWinSize = 40
+let NERDTreeShowHidden=1
+let NERDTreeDirArrowExpandable = '+'
+let NERDTreeDirArrowCollapsible = '-'
+
+"> FZF
+"""""""
+
 " fzf layout
 let g:fzf_layout = { 'down': '~25%' }
 
@@ -36,3 +50,35 @@ let g:fzf_files_options =
 
 " [[B]Commits] Customize the options used by 'git log':
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
+
+"> Vim Fugitive
+""""""""""""""""
+nmap <silent><leader>gb :Gblame<cr>
+nmap <silent> <leader>gs :Gstatus<cr>
+
+"> Vim Lightline
+"""""""""""""""""
+function! LightlineFileformat()
+  return winwidth(0) > 70 ? &fileformat : ''
+endfunction
+
+function! LightlineFiletype()
+  return winwidth(0) > 70 ? (&filetype !=# '' ? &filetype : 'no ft') : ''
+endfunction
+
+let g:lightline = {
+  \ 'colorscheme': 'onedark',
+  \ 'active': {
+  \   'left': [ [ 'mode', 'paste' ],
+  \             [ 'gitbranch', 'readonly', 'filename', 'modified' ] ]
+  \ },
+  \ 'component_function': {
+  \   'gitbranch': 'fugitive#head',
+  \   'fileformat': 'LightlineFileformat',
+  \   'filetype': 'LightlineFiletype',
+  \ },
+  \ }
+
+"> Tmuxline
+let g:tmuxline_preset='tmux'
+let g:tmuxline_theme='lightline'

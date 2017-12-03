@@ -10,12 +10,8 @@ function box_name {
 
 # Git info.
 local git_info='$(git_prompt_info)'
-# ZSH_THEME_GIT_PROMPT_PREFIX=" %{$fg[white]%}on%{$reset_color%} git:%{$fg[cyan]%}"
-# ZSH_THEME_GIT_PROMPT_SUFFIX="%{$reset_color%}"
-# ZSH_THEME_GIT_PROMPT_DIRTY=" %{$fg[red]%}x"
-# ZSH_THEME_GIT_PROMPT_CLEAN=" %{$fg[green]%}o"
 
-# Prompt format: \n # USER at MACHINE in DIRECTORY on git:BRANCH STATE [TIME] \n $
+# Prompt format: \n # USER DIRECTORY BRANCH STATE \n $
 PROMPT="%{$terminfo[bold]$fg[cyan]%}%n %{$terminfo[bold]$fg[yellow]%}%~%{$reset_color%}%{$fg[red]%}%{$reset_color%} ${git_info}%{$reset_color%}
 %B$%b "
 

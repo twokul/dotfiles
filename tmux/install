@@ -1,0 +1,4 @@
+#!/usr/bin/env bash
+
+# Link config files
+ln -s $HOME/.dotfiles/tmux/tmux.conf $HOME/.tmux.conf

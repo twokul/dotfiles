@@ -2,7 +2,8 @@
 call plug#begin('~/.vim/plugged')
 
 " colourschemes
-Plug 'sonph/onehalf', {'rtp': 'vim/'}
+Plug 'joshdick/onedark.vim'
+Plug 'KeitaNakamura/neodark.vim'
 
 " utilities
 Plug 'junegunn/vim-easy-align' " A simple, easy-to-use Vim alignment plugin
@@ -11,8 +12,7 @@ Plug 'Xuyuanp/nerdtree-git-plugin', { 'on': 'NERDTreetToggle' } " A plugin of NE
 Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
-Plug 'vim-airline/vim-airline' " fancy statusline
-Plug 'vim-airline/vim-airline-themes' " themes for vim-airline
+Plug 'itchyny/lightline.vim'
 Plug 'tpope/vim-fugitive' " amazing git wrapper for vim
 Plug 'tpope/vim-repeat' " enables repeating other supported plugins with the . command
 Plug 'tpope/vim-commentary' " comment stuff out
@@ -26,10 +26,11 @@ Plug 'MarcWeber/vim-addon-mw-utils' " interpret a file by function and cache fil
 Plug 'tomtom/tlib_vim' " utility functions for vim
 Plug 'garbas/vim-snipmate' " snippet manager
 
-" html / templates
+" html
 Plug 'gregsexton/MatchTag', { 'for': 'html' } " match tags in html, similar to paren support
-Plug 'othree/html5.vim', { 'for': 'html' } " html5 support
-Plug 'mustache/vim-mustache-handlebars' " mustach suppor
+
+" language highlighting
+Plug 'sheerun/vim-polyglot' " A collection of language packs for Vim.
 
 " JavaScript
 Plug 'pangloss/vim-javascript'
@@ -45,8 +46,10 @@ Plug 'tpope/vim-markdown', { 'for': 'markdown' } " markdown support
 
 " language-specific plugins
 Plug 'elzr/vim-json', { 'for': 'json' } " JSON support
-Plug 'Shougo/vimproc.vim', { 'do': 'make' } " interactive command execution in vim
 Plug 'rust-lang/rust.vim' " Rust support for vim
+
+" Tmux
+Plug 'edkolev/tmuxline.vim' " Simple tmux statusline generator
 
 " Add plugins to &runtimepath
 call plug#end()

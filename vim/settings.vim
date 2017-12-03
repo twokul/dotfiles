@@ -1,12 +1,9 @@
-" Behaviors
-" ---------------
-set nocompatible      " not compatible with vi
+" Settings for Vim
+
 set autoread          " automatically update file unless buffer has unsaved changes
-syntax enable         " Turn on syntax highlighting allowing local overrides
 set hidden            " allow buffer switching without saving
 set history=1000      " Store a ton of history (default is 20)
 set noswapfile        " Don't use swap file
-set pastetoggle=<F7>  " set showcmd
 set timeout           " Time out on key codes but not mappings.
 set ttimeout          " Time out on key codes but not mappings.
 set timeoutlen=1000   " Time to wait for a command (after leader for example).
@@ -15,43 +12,34 @@ set nostartofline     " Don't go to the start of the line after some commands
 set scrolloff=3       " minimum lines to keep above and below cursor
 set switchbuf=useopen " Switch to an existing buffer if one exists)
 set splitright        " Split vertical windows right to the current windows
-set splitbelow        " Split horizontal windows below to the current windows"
-set encoding=utf-8    " Set default encoding to UTF-8"
-set laststatus=2      " show the status line all the time"
+set splitbelow        " Split horizontal windows below to the current windows
+set encoding=utf-8    " Set default encoding to UTF-8
+set laststatus=2      " show the status line all the time
 set showcmd           " show incomplete commands
 set noshowmode        " don't show which mode disabled for PowerLine
-set wildmenu          " enhanced command line completion"
-set scrolloff=3       " lines of text around cursor
-set shell=$SHELL
 set cmdheight=1       " command bar height
 set title             " set terminal title"
 set number            " show line numbers"
-" set relativenumber  " show relative line numbers
 set autoindent        " automatically set indent of new line"
-set smartindent
+" set smartindent
+set textwidth=80      " set width of the line to 80 characters
 set wrap              " turn on line wrapping
 set wrapmargin=8      " wrap lines when coming within n characters from side
 set linebreak         " set soft wrapping
 set showbreak=…       " show ellipsis at breaking
-set ttyfast           " faster redrawing"
-set diffopt+=vertical
+set ttyfast           " faster redrawing
+" set diffopt+=vertical
 
 set noexpandtab             " insert tabs rather than spaces for <Tab>
 set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'
-set tabstop=4               " the visible width of tabs
-set softtabstop=4           " edit as if the tabs are 4 characters wide
-set shiftwidth=4            " number of spaces to use for indent and unindent
+set tabstop=2               " the visible width of tabs
+set softtabstop=2           " edit as if the tabs are 4 characters wide
+set shiftwidth=2            " number of spaces to use for indent and unindent
 set shiftround              " round indent to a multiple of 'shiftwidth'
-set completeopt+=longest,menuone
-set complete=.,w,b,u,t
+" set completeopt+=longest,menuone
+" set complete=.,w,b,u,t
 set magic                   " Set magic on, for regex
 set showmatch               " show matching braces
-
-" error bells
-set noerrorbells
-set visualbell
-set t_vb=
-set tm=500
 
 " Mouse support
 set mousehide  " Hide mouse after chars typed
@@ -78,47 +66,34 @@ set wildignore+=*.orig                           " Merge resolution files
 set wildignore+=*bower_components/*              " Ignore bower
 set wildignore+=*node_modules/*                  " Ignore npm
 
-set wildmode=list:full   " complete files like a shell"
-set backspace=indent,eol,start " make backspace behave in a sane manner
+" enables a menu at the bottom of the vim/gvim window.
+set wildmenu
 
-" Colour
-" ---------------
-syntax on
-set background=dark
-colorscheme onehalfdark
+" when you do completion in the command line via tab,
+" these events will happen:
+" 1. (first tab) a list of completions will be shown
+"    and the command will be completed to the longest
+"    common command
+" 2. (second tab) the wildmenu will show up with all the
+"    completions that were listed before.
+set wildmode=list:longest,full
 
-if &term =~ '256color'
-  " Force 256 color mode if available
-  set t_Co=256
-  " disable background color erase
-  set t_ut=
-endif
+" Backspace works in Insert mode (e.g. not inserting a ^?),
+" but won't delete over line breaks, or automatically-inserted
+" indentation, or the place where insert mode started so:
+set backspace=indent,eol,start
 
-" enable 24 bit color support if supported
-if (empty($TMUX) && has("termguicolors"))
-  set termguicolors
-endif
-
-" make the highlighting of tabs and other non-text less annoying
-highlight SpecialKey ctermbg=none ctermfg=8
-highlight NonText ctermbg=none ctermfg=8
-
-" make comments and HTML attributes italic
-highlight Comment cterm=italic
-highlight htmlArg cterm=italic
-
-" toggle invisible characters
+" show invisible characters
 set list
 set listchars=tab:→\ ,trail:•,extends:❯,precedes:❮
 
 " highlight conflicts
 match ErrorMsg '^\(<\|=\|>\)\{7\}\([^=].\+\)\?$'
 
-" code folding settings
-set foldmethod=syntax       " fold based on indent
-set foldnestmax=10          " deepest fold is 10 levels
-set nofoldenable            " don't fold by default
-set foldlevel=1
+" Make sure files are properly highlighted
+filetype on           " Enable filetype detection
+filetype indent on    " Enable filetype-specific indenting
+filetype plugin on    " Enable filetype-specific plugins"
 
 " Gary Bernhardt's split style
 set winwidth=79
