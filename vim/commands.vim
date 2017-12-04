@@ -12,6 +12,16 @@ nnoremap <leader><space> :nohls<CR>
 " Adjust viewports to the same size
 map <leader>= <C-w>=
 
+" auto-indent entire file
+nnoremap <silent> <leader>a= :gg=G<CR>
+
+" Buffer
+" https://technotales.wordpress.com/2010/04/29/vim-splits-a-guide-to-doing-exactly-what-you-want/
+nmap <leader>sh :leftabove  vnew<CR>
+nmap <leader>sl :rightbelow vnew<CR>
+nmap <leader>sk :leftabove  new<CR>
+nmap <leader>sj :rightbelow new<CR>
+
 " Use CTRL to move lines up and down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
