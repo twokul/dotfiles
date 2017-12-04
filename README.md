@@ -12,3 +12,7 @@ git clone git://github.com/twokul/dotfiles.git ~/.dotfiles
 # FZF + preview
 
 <img width="1568" alt="screen shot 2017-12-04 at 5 51 38 am" src="https://user-images.githubusercontent.com/1131196/33556006-648571f8-d8b7-11e7-9e51-5df182d64e1f.png">
+
+# Goyo + Limelight
+
+<img width="1568" alt="screen shot 2017-12-04 at 7 33 01 am" src="https://user-images.githubusercontent.com/1131196/33560752-726ef97a-d8c5-11e7-8ca4-856eab5abdb4.png">
