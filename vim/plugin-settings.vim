@@ -3,11 +3,19 @@
 "> NerdTree
 """"""""""""
 nmap <silent> <leader>k :NERDTreeToggle<cr>
-let g:NERDSpaceDelims = 1
-let g:NERDTreeWinSize = 40
+let g:NERDSpaceDelims=1
+let g:NERDTreeWinSize=40
 let NERDTreeShowHidden=1
 let NERDTreeDirArrowExpandable = '+'
 let NERDTreeDirArrowCollapsible = '-'
+
+"> Goyo
+""""""""
+nnoremap <leader>G :Goyo<CR>
+let g:limelight_paragraph_span=1
+let g:limelight_priority=-1
+autocmd! User GoyoEnter Limelight
+autocmd! User GoyoLeave Limelight!
 
 "> FZF
 """""""

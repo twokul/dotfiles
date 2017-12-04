@@ -22,6 +22,13 @@ nmap <leader>sl :rightbelow vnew<CR>
 nmap <leader>sk :leftabove  new<CR>
 nmap <leader>sj :rightbelow new<CR>
 
+nnoremap ]b :bnext<cr>
+nnoremap [b :bprev<cr>
+
+" Tabs
+nnoremap ]t :tabn<cr>
+nnoremap [t :tabp<cr>
+
 " Use CTRL to move lines up and down
 nnoremap <C-j> :m .+1<CR>==
 nnoremap <C-k> :m .-2<CR>==
