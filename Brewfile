@@ -32,6 +32,10 @@ cask "font-source-code-pro-for-powerline"
 # http://sourcefoundry.org/hack/
 cask "font-hack"
 
+# Aerial Screensaver
+# https://github.com/JohnCoates/Aerial
+cask "aerial"
+
 # Utils
 
 # Text processing utility
