@@ -34,6 +34,11 @@ cask "font-hack"
 
 # Utils
 
+# Text processing utility
+# Used for previews in Terminal when hitting "Ctrl + t"
+# http://www.andre-simon.de/doku/highlight/en/highlight.php
+brew "highlight"
+
 # Install GNU core utilities (those that come with macOS are outdated).
 # Don’t forget to add `$(brew --prefix coreutils)/libexec/gnubin` to `$PATH`.
 brew "coreutils"
