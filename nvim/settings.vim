@@ -13,7 +13,7 @@ set scrolloff=3       " minimum lines to keep above and below cursor
 set switchbuf=useopen " Switch to an existing buffer if one exists)
 set splitright        " Split vertical windows right to the current windows
 set splitbelow        " Split horizontal windows below to the current windows
-set encoding=utf-8    " Set default encoding to UTF-8
+set encoding=UTF-8    " Set default encoding to UTF-8
 set laststatus=2      " show the status line all the time
 set showcmd           " show incomplete commands
 set noshowmode        " don't show which mode disabled for PowerLine
@@ -29,6 +29,7 @@ set linebreak         " set soft wrapping
 set showbreak=…       " show ellipsis at breaking
 set ttyfast           " faster redrawing
 " set diffopt+=vertical
+set guifont=FuraCode\ Nerd\ Font:h11
 
 set expandtab               " insert spaces rather than tabs for <Tab>
 set smarttab                " tab respects 'tabstop', 'shiftwidth', and 'softtabstop'

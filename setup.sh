@@ -35,7 +35,7 @@ $DOTFILES/spectacle/install.sh
 
 # Vim
 # https://vim.org
-$DOTFILES/vim/install
+$DOTFILES/nvim/install
 
 # Languages
 

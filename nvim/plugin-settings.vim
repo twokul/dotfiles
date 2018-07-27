@@ -1,14 +1,5 @@
 " Settings for NerdTree, FZF, Fugitive, Lightline
 
-"> NerdTree
-""""""""""""
-nmap <silent> <leader>k :NERDTreeToggle<cr>
-let g:NERDSpaceDelims=1
-let g:NERDTreeWinSize=40
-let NERDTreeShowHidden=1
-let NERDTreeDirArrowExpandable = '+'
-let NERDTreeDirArrowCollapsible = '-'
-
 "> Goyo
 """"""""
 nnoremap <leader>G :Goyo<CR>
@@ -21,7 +12,7 @@ autocmd! User GoyoLeave Limelight!
 """""""
 
 " fzf layout
-let g:fzf_layout = { 'down': '~40%' }
+let g:fzf_layout = { 'down': '~45%' }
 " Customize fzf colors to match your color scheme
 let g:fzf_colors =
 \ { 'fg':      ['fg', 'Normal'],
@@ -38,12 +29,17 @@ let g:fzf_colors =
   \ 'spinner': ['fg', 'Label'],
   \ 'header':  ['fg', 'Comment'] }
 
+let g:fzf_action = {
+      \ 'ctrl-t': 'tab split',
+      \ 'ctrl-i': 'split',
+      \ 'ctrl-s': 'vsplit' }
+
 " Hide status line of the containing buffer
 autocmd! FileType fzf
 autocmd  FileType fzf set laststatus=0 noshowmode noruler
   \| autocmd BufLeave <buffer> set laststatus=2 showmode ruler
 
-nnoremap <C-p> :FZF<CR>
+nnoremap <C-p> :Files<CR>
 
 if isdirectory(".git")
   " if in a git project, use :GFiles
@@ -79,6 +75,20 @@ let g:fzf_files_options =
 " [[B]Commits] Customize the options used by 'git log':
 let g:fzf_commits_log_options = '--graph --color=always --format="%C(auto)%h%d %s %C(black)%C(bold)%cr"'
 
+command! -bang -nargs=* Rg
+  \ call fzf#vim#grep(
+  \   'rg --column --line-number --no-heading --color=always '.shellescape(<q-args>), 1,
+  \   <bang>0 ? fzf#vim#with_preview('up:60%')
+  \           : fzf#vim#with_preview('right:50%:hidden', '?'),
+  \   <bang>0)
+
+let g:rg_command = '
+  \ rg --column --line-number --no-heading --fixed-strings --ignore-case --no-ignore --hidden --follow --color "always"
+  \ -g "*.{js,json,php,md,styl,pug,jade,html,config,py,cpp,c,go,hs,rb,conf,fa,lst}"
+  \ -g "!{.config,.git,node_modulesendor,build,yarn.lock,*.sty,*.bst,*.coffee,dist}/*" '
+
+command! -bang -nargs=* F call fzf#vim#grep(g:rg_command .shellescape(<q-args>), 1, <bang>0)'
+
 "> Vim Fugitive
 """"""""""""""""
 nmap <silent><leader>gb :Gblame<cr>
@@ -110,3 +120,23 @@ let g:lightline = {
 "> Tmuxline
 let g:tmuxline_preset='tmux'
 let g:tmuxline_theme='lightline'
+
+"> Airline
+let g:airline_theme='oceanicnext'
+
+"> QuickScope
+
+" Trigger a highlight in the appropriate direction when pressing these keys:
+let g:qs_highlight_on_keys = ['f', 'F', 't', 'T']
+
+" Trigger a highlight only when pressing f and F.
+let g:qs_highlight_on_keys = ['f', 'F']
+
+" NerdTree
+nmap <silent> <leader>n :NERDTreeToggle<cr>
+let g:NERDSpaceDelims=1
+let g:NERDTreeWinSize=40
+let g:NERDTreeWinPos = "right"
+let NERDTreeShowHidden=1
+" let NERDTreeDirArrowExpandable = '+'
+" let NERDTreeDirArrowCollapsible = '-'

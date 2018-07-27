@@ -13,10 +13,10 @@ alias reload!=". ~/.zshrc"
 alias md="mkdir -p"
 
 # Tmux
-alias tns "tmux new -s"
-alias ta "tmux attach -t"
-alias tls "tmux ls"
-alias tk "tmux kill-session -t"
+alias tns="tmux new -s"
+alias ta="tmux attach -t"
+alias tls="tmux ls"
+alias tk="tmux kill-session -t"
 
 # `coreutils` overrides
 alias ls="gls -F --color"
@@ -27,20 +27,45 @@ alias la="gls -A --color"
 # Jumper
 alias z="fasd_cd -d"
 
+# Use `hub` as our git wrapper:
+#   http://defunkt.github.com/hub/
+hub_path=$(which hub)
+if [[ -f $hub_path ]]
+then
+  alias git=$hub_path
+fi
+
+# ripgrep
+alias findme='rg -s -n -A 1 -B 1 -C 1'
+
 # Git
-#
-alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
-alias gco="git checkout"
-alias gs="git status -sb"
-alias gp="git push origin HEAD"
-alias gr="git remote"
-alias ga="git add"
-alias gpf="git push origin HEAD --force"
-alias gd="git diff"
-alias gc="git commit -v"
 alias gdt="git difftool"
-alias gb="git branch"
+alias gl='git pull --prune'
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias hp='hub push origin HEAD'
+alias hpr='hub pull-request'
+alias hbr='hub browse'
+alias hd='hub diff'
+alias hc='hub commit -v'
+alias gca='git commit -a'
+alias gco='git checkout'
+alias gb='git branch'
+alias hs='hub status -sb' # upgrade your git if -sb breaks for you. it's fun.
+alias grm='git status | grep deleted | awk '{print \$3}' | xargs git rm'
+alias hum='hub pull upstream master'
+alias gra='git remote add'
+alias hitall='hub add . --all'
+alias gum='git pull upstream master'
+alias gr='git remote'
+alias ga='git add'
+alias gpf='git push origin HEAD --force'
+alias gd='git diff'
+alias gc='git commit -v'
+alias gco='git checkout'
+alias gs='git status -sb'
+alias gp='git push origin HEAD'
+alias gbv='git branch -v'
+alias grv='git remote -v'
 
 # Copy public key to clipboard
-#
 alias pubkey="more ~/.ssh/id_rsa.pub | pbcopy | echo '=> Public key copied to pasteboard.'"

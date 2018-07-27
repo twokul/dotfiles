@@ -1,5 +1,7 @@
 #!/usr/bin/env bash
 
-https://github.com/joshdick/onedark.vim $HOME/.dotfiles/themes/onedark
+git clone git@github.com:mhartington/oceanic-next-iterm.git $HOME/.dotfiles/themes/oceanic-next
+# git clone git@github.com:robinbentley/oceanic-next-macos-terminal.git $HOME/.dotfiles/themes/oceanic-next
+# https://github.com/joshdick/onedark.vim $HOME/.dotfiles/themes/onedark
 # git clone https://github.com/sonph/onehalf.git $HOME/.dotfiles/themes/onehalf
 # git clone https://github.com/benniemosher/the-one-theme/ $HOME/.dotfiles/themes/the-one-theme

@@ -2,11 +2,11 @@
 
 # Install Plug https://github.com/junegunn/vim-plug
 
-# Install for Vim
-curl -fLo ~/.vim/autoload/plug.vim --create-dirs \
+# Install for Neovim
+curl -fLo ~/.local/share/nvim/site/autoload/plug.vim --create-dirs \
     https://raw.githubusercontent.com/junegunn/vim-plug/master/plug.vim
 
 # Link Vim config files
-ln -s $HOME/.dotfiles/vim/.vimrc $HOME/.vimrc
+ln -s $HOME/.dotfiles/nvim/init.vim $HOME/.config/nvim/init.vim
 
-vim +PlugInstall
+nvim +PlugInstall

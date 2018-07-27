@@ -4,6 +4,7 @@ call plug#begin('~/.vim/plugged')
 " colourschemes
 Plug 'joshdick/onedark.vim'
 Plug 'KeitaNakamura/neodark.vim'
+Plug 'mhartington/oceanic-next'
 
 " utilities
 Plug 'junegunn/vim-easy-align' " A simple, easy-to-use Vim alignment plugin
@@ -25,6 +26,7 @@ Plug 'dag/vim-fish' " addon for Vim providing support for editing fish scripts
 Plug 'MarcWeber/vim-addon-mw-utils' " interpret a file by function and cache file automatically
 Plug 'tomtom/tlib_vim' " utility functions for vim
 Plug 'garbas/vim-snipmate' " snippet manager
+Plug 'unblevable/quick-scope' "A Vim plugin that highlights which characters to target for f, F and family
 
 " html
 Plug 'gregsexton/MatchTag', { 'for': 'html' } " match tags in html, similar to paren support
@@ -50,6 +52,15 @@ Plug 'rust-lang/rust.vim' " Rust support for vim
 
 " Tmux
 Plug 'edkolev/tmuxline.vim' " Simple tmux statusline generator
+
+" vim airline
+Plug 'vim-airline/vim-airline'
+
+" devicons
+Plug 'ryanoasis/vim-devicons'
+
+" NerdTree
+Plug 'scrooloose/nerdtree'
 
 " Add plugins to &runtimepath
 call plug#end()

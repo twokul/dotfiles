@@ -6,7 +6,7 @@ sh -c "$(curl -fsSL https://raw.githubusercontent.com/robbyrussell/oh-my-zsh/mas
 ln -s $DOTFILES/themes/oh-my-zsh/twokul.zsh-theme $HOME/.oh-my-zsh/themes/twokul.zsh-theme
 
 # zshrc config
-ln -s $DOTFILES/shell/.config ~/.zshrc
+ln -s $DOTFILES/.zshrc ~/.zshrc
 
 # fzf autocompletions
 $(brew --prefix)/opt/fzf/install

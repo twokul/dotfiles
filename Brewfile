@@ -10,27 +10,8 @@ cask_args appdir: "/Applications"
 # https://github.com/caskroom/homebrew-fonts
 tap "caskroom/fonts"
 
-# http://levien.com/type/myfonts/inconsolata.html
-cask "font-inconsolata"
-cask "font-inconsolata-for-powerline"
-
-# https://www.marksimonson.com/fonts/view/anonymous-pro
-cask "font-anonymous-pro"
-cask "font-anonymice-powerline"
-
 # https://github.com/tonsky/FiraCode
 cask "font-fira-code"
-
-# https://mozilla.github.io/Fira/
-cask "font-fira-mono"
-cask "font-fira-mono-for-powerline"
-
-# https://adobe-fonts.github.io/source-code-pro/
-cask "font-source-code-pro"
-cask "font-source-code-pro-for-powerline"
-
-# http://sourcefoundry.org/hack/
-cask "font-hack"
 
 # Aerial Screensaver
 # https://github.com/JohnCoates/Aerial
@@ -77,10 +58,6 @@ brew "hub"
 # https://www.freedesktop.org/wiki/Software/fontconfig/
 brew "fontconfig"
 
-# A code-searching tool similar to ack, but faster
-# https://github.com/ggreer/the_silver_searcher
-brew "the_silver_searcher"
-
 # ngrok exposes local servers behind NATs and firewalls
 # to the public internet over secure tunnels.
 # https://ngrok.com
@@ -94,10 +71,6 @@ brew "ripgrep"
 # Command-line productivity booster
 # https://github.com/clvv/fasd
 brew "fasd"
-
-# Swiss Army Knife for macOS
-# https://github.com/rgcr/m-cli
-brew "m-cli"
 
 # A simple command line interface for the Mac App Store
 # https://github.com/mas-cli/mas
@@ -157,9 +130,9 @@ cask "iterm2-nightly"
 # https://github.com/tmux/tmux
 brew "tmux"
 
-# The ubiquitous text editor
-# http://www.vim.org
-brew "vim"
+# The future of VIM
+# https://neovim.io
+brew "nvim"
 
 # A shell designed for interactive use
 # http://www.zsh.org
@@ -178,10 +151,6 @@ cask "spotify"
 # https://www.obdev.at/products/littlesnitch/index.html
 cask "little-snitch"
 
-# Evernote
-# http://evernote.com
-cask "evernote"
-
 # Git Client
 # https://www.sourcetreeapp.com
 cask "sourcetree"
@@ -199,22 +168,9 @@ cask "bartender"
 # https://kaleidoscopeapp.com
 cask "kaleidoscope"
 
-# Window control with simple and customizable keyboard
-# shortcuts
-# https://www.spectacleapp.com
-cask "spectacle"
-
 # Code Editor
 # https://code.visualstudio.com
 cask "visual-studio-code"
-
-# Switch between application windows effortlessly
-# https://contexts.co
-cask "contexts"
-
-# Typinator "types" frequently used text
-# http://www.ergonis.com/products/typinator/
-cask "typinator"
 
 # App Store
 
@@ -226,10 +182,6 @@ mas "1Password", id: 443987910
 # saver settings and keep your Mac awake.
 # https://itunes.apple.com/app/amphetamine/id937984704?mt=12
 mas "Amphetamine", id: 937984704
-
-# Open any archive in seconds
-# https://theunarchiver.com
-mas "The Unarchiver", id: 425424353
 
 # A simple yet powerful tool for working with regular
 # expressions.
@@ -245,7 +197,3 @@ mas "Irvue", id: 1039633667
 # your productivity.
 # http://noiz.io
 mas "Noizio", id: 928871589
-
-# Disk space management
-# https://daisydiskapp.com/index.html
-mas "DaisyDisk", id: 411643860
