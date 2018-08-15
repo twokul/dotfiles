@@ -140,3 +140,18 @@ let g:NERDTreeWinPos = "right"
 let NERDTreeShowHidden=1
 " let NERDTreeDirArrowExpandable = '+'
 " let NERDTreeDirArrowCollapsible = '-'
+"
+" Ale
+" Enable completion where available.
+let g:ale_completion_enabled = 1
+" Fix files with prettier, and then ESLint.
+let b:ale_fixers = ['prettier', 'eslint']
+" Equivalent to the above.
+let b:ale_fixers = {'javascript': ['prettier', 'eslint']}
+
+" GitGutter
+nmap ]h <Plug>GitGutterNextHunk
+nmap [h <Plug>GitGutterPrevHunk
+
+" Deoplete
+let g:deoplete#enable_at_startup = 1

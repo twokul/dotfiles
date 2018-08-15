@@ -62,5 +62,16 @@ Plug 'ryanoasis/vim-devicons'
 " NerdTree
 Plug 'scrooloose/nerdtree'
 
+" Ale
+Plug 'w0rp/ale'
+
+" GitGutter
+Plug 'airblade/vim-gitgutter'
+
+Plug 'Shougo/deoplete.nvim', { 'do': ':UpdateRemotePlugins' }
+Plug 'carlitux/deoplete-ternjs', { 'do': 'npm install -g tern' }
+
+Plug 'andymass/vim-matchup'
+
 " Add plugins to &runtimepath
 call plug#end()
