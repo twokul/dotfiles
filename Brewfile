@@ -197,3 +197,7 @@ mas "Irvue", id: 1039633667
 # your productivity.
 # http://noiz.io
 mas "Noizio", id: 928871589
+
+# Zsh Plugins
+brew "zsh-autosuggestions"
+brew "zsh-syntax-highlighting"

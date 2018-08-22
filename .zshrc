@@ -1,7 +1,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=$HOME/.oh-my-zsh
 ZSH_THEME="twokul"
-plugins=(git fasd brew common-aliases compleat gitfast git-extras last-working-dir npm web-search)
+plugins=(git fasd brew common-aliases compleat gitfast git-extras last-working-dir npm web-search zsh-autosuggestions zsh-syntax-highlighting)
 
 source $ZSH/oh-my-zsh.sh
 
@@ -71,3 +71,6 @@ fzf_log() {
   echo $hash | xclip
   git showtool $hash
 }
+
+source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
+source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
