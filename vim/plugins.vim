@@ -6,7 +6,8 @@ Plug 'KeitaNakamura/neodark.vim'
 
 " utilities
 Plug 'junegunn/vim-easy-align' " A simple, easy-to-use Vim alignment plugin
-Plug '/usr/local/opt/fzf' | Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
+Plug 'junegunn/fzf'
+Plug 'junegunn/fzf.vim' " fuzzy file finder and so much more
 Plug 'Raimondi/delimitMate' " automatic closing of quotes, parenthesis, brackets, etc.
 Plug 'tpope/vim-surround' " mappings to easily delete, change and add such surroundings in pairs, such as quotes, parens, etc.
 Plug 'tpope/vim-fugitive' " amazing git wrapper for vim
