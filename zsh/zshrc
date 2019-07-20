@@ -1,0 +1,97 @@
+# Setup zplug
+# --------------------------------------
+if [[ "$OSTYPE" == darwin* ]]; then
+  export ZPLUG_HOME=/usr/local/opt/zplug
+else
+  export ZPLUG_HOME=$HOME/.zplug
+fi
+
+source $ZPLUG_HOME/init.zsh
+
+zplug "denysdovhan/spaceship-prompt", use:spaceship.zsh, from:github, as:theme
+zplug modules/history, from:prezto
+zplug modules/completion, from:prezto
+
+# Install plugins if there are plugins that have not been installed
+if ! zplug check; then
+  zplug install
+fi
+
+zplug load # --verbose (if curious what is going on)
+
+# Setup fzf
+# ---------
+
+if [[ "$OSTYPE" == darwin* ]]; then
+  # Auto-completion
+  [[ $- == *i* ]] && source "/usr/local/opt/fzf/shell/completion.zsh" 2> /dev/null
+
+  # Key bindings
+  source "/usr/local/opt/fzf/shell/key-bindings.zsh"
+else
+  if [[ ! "$PATH" == */$HOME/.fzf/bin* ]]; then
+    export PATH="$PATH:$HOME/.fzf/bin"
+  fi
+
+  # Auto-completion
+  # ---------------
+  [[ $- == *i* ]] && source "$HOME/.fzf/shell/completion.zsh" 2> /dev/null
+
+  # Key bindings
+  # ------------
+  source "$HOME/.fzf/shell/key-bindings.zsh"
+
+  export FZF_DEFAULT_OPTS='--height 40% --reverse --border'
+  export FZF_COMPLETION_OPTS='+c -x'
+  export FZF_DEFAULT_COMMAND='rg --files --no-ignore --hidden --follow -g "!{.git,node_modules,bower_components,.vscode,tmp}/*" 2> /dev/null'
+  export FZF_CTRL_T_COMMAND="$FZF_DEFAULT_COMMAND"
+  export FZF_CTRL_T_OPTS="--preview '(highlight -O ansi -l {} 2> /dev/null || cat {} || tree -C {}) 2> /dev/null | head -200'"
+  export FZF_CTRL_R_OPTS="--preview 'echo {}' --preview-window down:3:hidden:wrap --bind '?:toggle-preview'"
+fi
+
+# Setup defaults
+# --------------
+# Default editor
+export EDITOR="vim"
+
+# Setup fasd
+# ---------
+eval "$(fasd --init auto)"
+
+# Setup Hub
+# ---------
+# use https://github.com/github/hub as `git`
+eval "$(hub alias -s)"
+
+# Aliases
+# ------
+# Create a new directory
+alias md="mkdir -p"
+
+# Tmux
+alias tns "tmux new -s"
+alias ta "tmux attach -t"
+alias tls "tmux ls"
+alias tk "tmux kill-session -t"
+
+# `coreutils` overrides
+alias ls="gls -F --color"
+alias l="gls -lAh --color"
+alias ll="gls -l --color"
+alias la="gls -A --color"
+
+# Jumper
+alias z="fasd_cd -d"
+
+# Git
+alias glog="git log --graph --pretty=format:'%Cred%h%Creset %an: %s - %Creset %C(yellow)%d%Creset %Cgreen(%cr)%Creset' --abbrev-commit --date=relative"
+alias gco="git checkout"
+alias gs="git status -sb"
+alias gp="git push origin HEAD"
+alias gr="git remote"
+alias ga="git add"
+alias gpf="git push origin HEAD --force"
+alias gd="git diff"
+alias gc="git commit -v"
+alias gdt="git difftool"
+alias gb="git branch"
