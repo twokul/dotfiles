@@ -19,6 +19,10 @@ fi
 
 zplug load # --verbose (if curious what is going on)
 
+# Setup Yarn
+# ---------
+export PATH=~/.yarn/bin:$PATH
+
 # Setup fzf
 # ---------
 
