@@ -94,3 +94,4 @@ fi
 link-dotfile "zsh/zshrc" "$HOME/.zshrc"
 link-dotfile "git/gitconfig" "$HOME/.gitconfig"
 link-dotfile "git/gitignore_global" "$HOME/.gitignore_global"
+link-dotfile "vim/vimrc" "$HOME/.vimrc"
